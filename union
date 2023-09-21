@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+union Number {
+    int integer;
+    float floating_point;
+};
+
+int main() {
+    union Number num;
+
+    num.integer = 42;
+    printf("정수 값: %d\n", num.integer);
+
+    num.floating_point = 3.14;
+    printf("부동 소수점 값: %f\n", num.floating_point);
+
+    
+    printf("정수 값 (재사용): %d\n", num.integer);
+
+    return 0;
+}
