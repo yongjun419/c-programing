@@ -1,6 +1,8 @@
+이코드는 enum의 열거형과 switch로 출력하는 형태를 가지고있습니다.
+
+
 #include <stdio.h>
 
-// 달의 월을 나타내는 열거형 정의
 enum Month {
     JANUARY,  // 0
     FEBRUARY, // 1
@@ -17,7 +19,6 @@ enum Month {
 };
 
 int main() {
-    // 열거형 월을 사용하여 월 이름 출력
     enum Month currentMonth = SEPTEMBER;
     printf("현재 월은 ");
     switch (currentMonth) {
