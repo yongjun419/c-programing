@@ -1,0 +1,67 @@
+#include <stdio.h>
+
+// 달의 월을 나타내는 열거형 정의
+enum Month {
+    JANUARY,  // 0
+    FEBRUARY, // 1
+    MARCH,    // 2
+    APRIL,    // 3
+    MAY,      // 4
+    JUNE,     // 5
+    JULY,     // 6
+    AUGUST,   // 7
+    SEPTEMBER,// 8
+    OCTOBER,  // 9
+    NOVEMBER, // 10
+    DECEMBER  // 11
+};
+
+int main() {
+    // 열거형 월을 사용하여 월 이름 출력
+    enum Month currentMonth = SEPTEMBER;
+    printf("현재 월은 ");
+    switch (currentMonth) {
+        case JANUARY:
+            printf("1월");
+            break;
+        case FEBRUARY:
+            printf("2월");
+            break;
+        case MARCH:
+            printf("3월");
+            break;
+        case APRIL:
+            printf("4월");
+            break;
+        case MAY:
+            printf("5월");
+            break;
+        case JUNE:
+            printf("6월");
+            break;
+        case JULY:
+            printf("7월");
+            break;
+        case AUGUST:
+            printf("8월");
+            break;
+        case SEPTEMBER:
+            printf("9월");
+            break;
+        case OCTOBER:
+            printf("10월");
+            break;
+        case NOVEMBER:
+            printf("11월");
+            break;
+        case DECEMBER:
+            printf("12월");
+            break;
+        default:
+            printf("알 수 없음");
+            break;
+    }
+    printf(" 입니다.\n");
+
+    return 0;
+}
